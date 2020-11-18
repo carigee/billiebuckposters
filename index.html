@@ -8,29 +8,67 @@
   <body>
 <header>
 
+<!-- NAVIGATION -->
   <nav>
     <div id="logo">
       <a href="#home"><img src="./img/logo.png"></a>
     </div>
     <ul>
-      <li><a href="#work">Work</a></li>
+      <li><a href="#folio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#store">Make A Payment</a></li>
     </ul>
   </nav>
 </header>
+
+<!-- HERO -->
 <div id="hero">
   <a name="home"></a>
   <img src="./img/hero-logo.png">
 </div>
-<section id="work">
-  <a name="work"></a>
+
+<!-- PORTFOLIO SECTION -->
+<section id="folio">
+  <a name="folio"></a>
 <h2>PORTFOLIO</h2>
+<div id="filter-menu">
+  <h4><a id="folioLogos" href="#">Logos</a></h4>
+  <h4><a id="folioPosters" href="#">Posters</a></h4>
+  <h4><a id="folioOther" href="#">Other Projects</a></h4>
+</div>
+<div id="folioGrid">
+<div class="folioImage"><img src="./img/folio1.png"></div>
+<div class="folioImage"><img src="./img/folio1.png"></div>
+<div class="folioImage"><img src="./img/folio1.png"></div>
+<div class="folioImage"><img src="./img/folio1.png"></div>
+</div>
 </section>
 
 <section id="contact">
   <a name="contact"></a>
 <h2>CONTACT</h2>
+
+<form id="form" class="box-shadow" style="margin-top: 35px;">
+      <h2>Contact Form</h2>
+  <label for="name">Contact Info</label>
+<input type="text" id="name" name="name" placeholder="First & Last Name">
+  <label for="email">Email Address</label>
+  <input id="email" type="email" name="email" placeholder="Email Address"></input>
+  <label for="name">Website (if applicable)</label>
+<input type="text" id="website" name="website" placeholder="Website">
+<label for="name">Project Due Date (if applicable)</label>
+<input type="date" id="dueDate" name="dueDate">
+<label for="item">What type of work are you looking for?</label>
+<select id="contactReason" name="contactReason">
+  <option>Posters</option>
+  <option>Album Art & Merch</option>
+  <option>Logos & Graphics</option>
+  <option>Other</option>
+</select>
+
+  <input id="submit" type="submit" value="Let's Go!" class="select"></input>
+</form>
+
 </section>
 
 <section id="store">
