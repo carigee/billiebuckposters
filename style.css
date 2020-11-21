@@ -39,10 +39,13 @@ nav > ul > li > a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+  transition: font-size .5s, color .5s;
 }
 
 nav > ul > li > a:hover {
-  color: red;
+  color: #ff0000;
+  font-size: 1.2rem;
+
 }
 
 
@@ -65,7 +68,8 @@ body {
 
 section {
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  min-height: 90vh;
   background-color: #000;
   color: #fff;
 }
@@ -80,14 +84,20 @@ section h2 {
   flex-direction: row;
   justify-content: space-between;
   width: 30%;
+  height: 50px;
   margin: 30px auto 30px auto;
 }
 
-h4, h4 > a {
+#filter-menu a {
   font-size: 1.5rem;
   font-style: italic;
   color: #fff;
+  transition: font-size .5s, color .5s;
+}
 
+#filter-menu a:hover {
+  font-size: 1.7rem;
+  color: #ff0000;
 }
 
 #folioGrid {
@@ -140,17 +150,37 @@ border-radius: 15px;
   margin: 30px auto 20px auto !important;
   text-align: center;
   background-color: #aaa;
+  transition: background-color .5s;
 }
 
 #submit:hover {
-background-color: #2444a6;
+background-color: #ccc;
 }
 
 #submit:active {
-  background-color: #213b8a;
+  background-color: #ddd;
 }
 
 footer {
   background-color: #000;
   color: #fff;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100px;
+}
+
+.social img {
+  width: 65px;
+  height: 65px;
+  padding: 15px;
+  transition: width .5s, height .5s;
+}
+
+.social img:hover {
+  width: 80px;
+  height: 80px;
 }
