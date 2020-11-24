@@ -82,10 +82,10 @@ section h2 {
 #filter-menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 30%;
+  justify-content: center;
   height: 50px;
-  margin: 30px auto 30px auto;
+  width: 600px;
+  margin: auto;
 }
 
 #filter-menu a {
@@ -93,6 +93,9 @@ section h2 {
   font-style: italic;
   color: #fff;
   transition: font-size .5s, color .5s;
+  width: 30%;
+  text-align: center;
+  padding: 50px;
 }
 
 #filter-menu a:hover {
@@ -105,11 +108,20 @@ section h2 {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1rem;
   margin: auto;
+  justify-content: center;
+}
+
+.folioImage {
+  align-self: center;
 }
 
 .folioImage > img {
   width: 100%;
   height: auto;
+}
+
+.folio_logo, .folio_poster, .folio_other {
+  display: block;
 }
 
 .box-shadow {
