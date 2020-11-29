@@ -1,6 +1,4 @@
 
-
-
 // FILTER MENU FUNCTIONS
 
 var filterLogos = document.getElementsByClassName("folio_logo");
