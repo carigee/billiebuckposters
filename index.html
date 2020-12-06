@@ -6,17 +6,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<script src="jquery-3.5.1.slim.min.js"></script>
+<script src="script.js"></script>
     <title>Billie Buck Posters</title>
   </head>
   <body>
 <header>
 
 <!-- NAVIGATION -->
-  <nav>
-    <div id="logo">
+  <nav class="navbar" id="navbar">
+    <div id="logo" class="logo">
       <a href="#home"><img src="./img/logo.png"></a>
     </div>
-    <ul>
+    <ul class="nav-ul">
       <li><a href="#folio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#about">About</a></li>
@@ -59,9 +61,10 @@
 
 
 <form id="form" class="box-shadow" style="margin-top: 35px;">
-  <h2>CONTACT</h2>
-  <p>Contact info & message
-    (required)</p>
+  <!-- <h2>CONTACT</h2> -->
+  <h2>- CONTACT INFO -</h2>
+  <!-- <p>Contact info & message
+    (required)</p> -->
   <div class="flexRow">
     <label for="name">Name:</label>
 <input type="text" id="name" name="name" placeholder="First & Last Name">
@@ -73,19 +76,22 @@ Type your message...
   </textarea>
     </div>
     <p></p>
-  <p>Additional details<br>(not required, but nice if you have them)</p>
+    <h2>- PROJECT DETAILS -</h2>
+  <p>
+    <!-- Additional details<br> -->
+    (not required, but nice if you have them)</p>
 <div class="flexRow">
   <label for="name">Website:</label>
-<input type="url" id="website" name="website" placeholder="Website">
+<input type="url" id="website" name="website" placeholder="yourwebsite.com">
 <label for="name">Project Due Date:</label>
 <input type="date" id="dueDate" name="dueDate">
 <label for="item">Project Type:</label>
-<select id="contactReason" name="contactReason">
-  <option>Posters</option>
+<div class="selectdiv"><select id="contactReason" name="contactReason">
+  <option selected>Posters</option>
   <option>Album Art & Merch</option>
   <option>Logos & Graphics</option>
   <option>Other</option>
-</select>
+</select></div>
 </div>
   <input id="submit" type="submit" value="Send" class="select"></input>
 </form>
@@ -101,23 +107,21 @@ Type your message...
 <br><br>
 In eget metus sit amet elit vehicula fringilla. Nullam eros mi, scelerisque sit amet malesuada sollicitudin, sagittis a eros. Phasellus urna odio, vehicula nec rhoncus sit amet, lacinia nec dolor. Vivamus fringilla tincidunt lobortis. Vivamus facilisis tortor sit amet placerat scelerisque. Donec fermentum, lorem ut tincidunt commodo, lacus ipsum tempus nulla, vitae lobortis urna felis eget tortor. Aenean facilisis nisi quis dolor tincidunt convallis. Nunc sit amet lectus tortor. Nunc dignissim porttitor lorem vitae venenatis. Phasellus semper tempor mollis. Nullam felis augue, maximus non metus non, faucibus gravida tellus. Nulla in lorem est.
 <br><br>
-Nullam tincidunt pharetra viverra. Fusce rutrum sem enim, non laoreet nisi sollicitudin commodo. Morbi sit amet libero sed diam ullamcorper dictum quis eget est. Ut posuere ultricies porttitor. Praesent in molestie elit. Integer vel velit magna. Quisque enim lorem, porttitor et ornare quis, hendrerit at urna. Donec facilisis blandit mi pulvinar pulvinar. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In vel nulla pulvinar, hendrerit felis et, imperdiet mi. Duis eleifend posuere purus, nec dapibus orci pharetra vitae. Donec bibendum, nisl id molestie aliquam, magna metus maximus elit, sed porttitor quam dui non sapien. Pellentesque sed nunc ornare, auctor quam ut, sollicitudin sem. Curabitur sit amet libero eu diam tempor fringilla. In vulputate porttitor tortor.
-<br><br>
 Proin rhoncus diam luctus vulputate malesuada. Nulla facilisi. In et justo a lacus aliquet aliquam. In hac habitasse platea dictumst. Fusce quam nunc, maximus at eros ac, aliquam dictum risus. Curabitur tempor, massa nec sollicitudin viverra, odio ligula pharetra leo, quis ornare diam arcu pretium sem. Aliquam ultricies convallis faucibus. Mauris sagittis rutrum lorem. Vivamus gravida a mauris nec venenatis. Aliquam sollicitudin vitae ipsum sit amet malesuada.</p>
 </div>
 
+<div class="social">
+    <a href="http://www.facebook.com/billiebuckposters" target="_blank"><img src="./img/fb.png"></a>
+    <a href="http://www.instagram.com/billiebuckposters" target="_blank"><img src="./img/in.png"></a>
+    <a href="@mailto:billiekbuck@gmail.com" target="_blank"><img src="./img/em.png"></a>
+</div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="social">
-      <a href="http://www.facebook.com/billiebuckposters" target="_blank"><img src="./img/fb.png"></a>
-      <a href="http://www.instagram.com/billiebuckposters" target="_blank"><img src="./img/in.png"></a>
-      <a href="@mailto:billiekbuck@gmail.com" target="_blank"><img src="./img/em.png"></a>
-  </div>
+
   All artwork copyright 2020 by Billie Buck Posters. <br>
   Website designed by yours truly~
 </footer>
-<script src="script.js"></script>
   </body>
 </html>

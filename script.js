@@ -1,3 +1,29 @@
+$(document).ready(function () {
+  $(window).scroll(function () {
+  if ($(window).scrollTop() >= 666) {
+  $('.navbar').css('background','#000');
+  $('#logo').css('opacity', '1');
+  } else {
+  $('#logo').css('opacity', '0');
+  $('.navbar').css('background','transparent');
+  }
+  });
+
+});
+
+
+// var nav = document.getElementById("navbar");
+//
+// window.addEventListener("scroll", function() {
+//   if (window.scrollTop() >= 50) {
+//     nav.style.background = "transparent";
+//   }
+//   else {
+//     nav.style.background = "#000";
+//   }
+// });
+
+
 
 // FILTER MENU FUNCTIONS
 
